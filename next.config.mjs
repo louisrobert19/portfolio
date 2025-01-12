@@ -5,7 +5,11 @@ const nextConfig = {
     swcMinify: true,
     eslint: {
         ignoreDuringBuilds: true,
-    }
+    },
+    sentry: {
+        disableServerWebpackPlugin: true,
+        disableClientWebpackPlugin: true,
+    },
 };
 
 export default withSentryConfig(withSentryConfig(nextConfig, {
