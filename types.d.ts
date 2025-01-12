@@ -13,9 +13,8 @@ declare global {
 }
 
 // Déclaration du module manquant dans Tailwind CSS
-declare module 'tailwindcss/lib/util/flattenColorPalette' {
-  const flattenColorPalette: (
-    colors: Record<string, string | Record<string, string>>
-  ) => Record<string, string>;
+declare module "tailwindcss/lib/util/flattenColorPalette" {
+  const flattenColorPalette: (colors: Record<string, any>) => Record<string, any>;
   export default flattenColorPalette;
 }
+

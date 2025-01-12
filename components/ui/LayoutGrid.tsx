@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -7,7 +8,7 @@ import { Button } from "./MovingBorders";
 
 type Card = {
   id: number;
-  content: JSX.Element | React.ReactNode | string;
+  content: React.ReactElement | React.ReactNode | string;
   className: string;
   thumbnail: string;
 };
