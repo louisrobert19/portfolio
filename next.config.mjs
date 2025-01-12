@@ -3,9 +3,6 @@ import {withSentryConfig} from '@sentry/nextjs';
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
-    eslint: {
-        ignoreDuringBuilds: true,
-    },
 };
 
 export default withSentryConfig(withSentryConfig(nextConfig, {
