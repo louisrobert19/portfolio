@@ -3,7 +3,14 @@ import {withSentryConfig} from '@sentry/nextjs';
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
-};
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
+    sentry: {
+      disableServerWebpackPlugin: true,
+      disableClientWebpackPlugin: true,
+    },
+  };
 
 export default withSentryConfig(withSentryConfig(nextConfig, {
 // For all available options, see:
@@ -11,6 +18,9 @@ export default withSentryConfig(withSentryConfig(nextConfig, {
 
 // Suppresses source map uploading logs during build
 silent: true,
+sourcemaps: {
+    disable: true,
+  },
 org: "louis-ci",
 project: "javascript-nextjs",
 }, {
