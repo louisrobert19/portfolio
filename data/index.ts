@@ -83,7 +83,7 @@ export const navItems = [
       title: "My Portfolio - Next.js",
       des: "Minimalist & Modern Portfolio built with Next.js, Tailwind CSS, Typescript, Three.js, and Acertenuity.",
       img: "/Portfolio.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/Three.svg"],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/ThreeJS.svg"],
       link: "https://github.com/louisrobert19/portfolio",
     },
     {
@@ -167,7 +167,7 @@ export const navItems = [
     {
       id: 8,
       name: "NEXT.JS",
-      img: "/Next.svg",
+      img: "/NextJS.svg",
       nameImg: "",
     },
     {
